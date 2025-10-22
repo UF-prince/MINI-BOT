@@ -530,15 +530,15 @@ const text =
     {
         title: "🌹 MAIN COMMANDS 🌹",
         rows: [
-            { title: "SYSTEM", description: "AP IS COMMAND SE BOT KA STATUS DEKH SAKTE HAI 😊", rowId: `${config.PREFIX}system` },
-            { title: "PING", description: "AP IS COMMAND SE BOT KI SPEED CHECK KAR SAKTE HAI 😊", rowId: `${config.PREFIX}ping` }
+            { title: "❤️ SYSTEM ❤️", description: "AP IS COMMAND SE BOT KA STATUS DEKH SAKTE HAI 😊", rowId: `${config.PREFIX}system` },
+            { title: "❤️ PING ❤️", description: "AP IS COMMAND SE BOT KI SPEED CHECK KAR SAKTE HAI 😊", rowId: `${config.PREFIX}ping` }
         ]
     },
     {
         title: "🌹 DOWNLOAD COMMANDS 🌹",
         rows: [
-            { title: "SONG", description: "AP IS COMMAND SE AUDIOS DOWNLOAD KAR SAKTE HAI 😇", rowId: `${config.PREFIX}song` },
-            { title: "SONG", description: "AP IS COMMAND SE VIDEOS DOWNLOAD KAR SAKTE HAI 😇", rowId: `${config.PREFIX}video` }
+            { title: "❤️ SONG ❤️", description: "AP IS COMMAND SE AUDIOS DOWNLOAD KAR SAKTE HAI 😇", rowId: `${config.PREFIX}song` },
+            { title: "❤️ VIDEO ❤️", description: "AP IS COMMAND SE VIDEOS DOWNLOAD KAR SAKTE HAI 😇", rowId: `${config.PREFIX}video` }
         ]
     },
     {
