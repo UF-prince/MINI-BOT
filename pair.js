@@ -40,7 +40,7 @@ const config = {
     MAX_RETRIES: 3,
     GROUP_INVITE_LINK: 'https://chat.whatsapp.com/BwWffeDwiqe6cjDDklYJ5m?mode=ems_copy_t',
     ADMIN_LIST_PATH: './admin.json',
-    IMAGE_PATH: 'https://i.postimg.cc/fbLksDqz/Screenshot-20251005-224142-Whats-App-Business.jpg',
+    IMAGE_PATH: 'https://files.catbox.moe/kunzpz.png',
     NEWSLETTER_JID: '120363419140572186@newsletter',
     NEWSLETTER_MESSAGE_ID: '0088',
     OTP_EXPIRY: 300000,
@@ -49,7 +49,7 @@ const config = {
     OWNER_NAME: 'BILAL',
     OWNER_NUMBER: '923078071982',
     BOT_VERSION: '1.0.0',
-    BOT_FOOTER: '*👑 BILAL-MD 👑',
+    BOT_FOOTER: '*👑 BILAL-MD WHATSAPP BOT 👑*',
     CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbBTlzoLtOjGXhhD4I2d',
     BUTTON_IMAGES: {
         ALIVE: 'https://i.postimg.cc/fbLksDqz/Screenshot-20251005-224142-Whats-App-Business.jpg',
