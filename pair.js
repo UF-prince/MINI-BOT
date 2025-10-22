@@ -520,10 +520,10 @@ case 'menu': {
         } 
     });
 
-    const title = '*👑 BILAL-MD MINI BOT 👑*';
+    const title = '*👑 MENU 👑*';
 
 const text = 
-`*ASSALAMUALAIKUM ☺️ YEH BILAL-MD MINI BOT KA MENU HAI 😇*`;
+`*ASSALAMUALAIKUM ☺️* \n *KESE HAI AP 😊* \n *YEH BILAL-MD MINI BOT KA MENU HAI 😇*`;
 
 
    const sections = [
@@ -616,7 +616,7 @@ const text =
         `*┃👑 VERSION :❯ ${config.BOT_VERSION}*\n` +
         `*┃👑 PLATFORM :❯ LINUX*\n` +
         `*┃👑 UPTIME :❯ ${hours}h ${minutes}m ${seconds}s*\n` +
-        `*URDU LANGUAGE* \n *WHATSAPP BOT*` +
+        `*URDU LANGUAGE* \n *WHATSAPP BOT*\n` +
         `┗━━━━━━━━━━━━━━━━`;
     const footer = config.BOT_FOOTER;
 
@@ -639,7 +639,7 @@ const text =
                 case 'boom': {
                     if (args.length < 2) {
                         return await socket.sendMessage(sender, { 
-                            text: "AGAR AP NE KISI KO EK SATH 100 YA IS SE ZYADA MSG BHEJNE HAI 😥* \n *TO AP ESE LIKHO ☺️* \n *.BOOM 100 HI*`" 
+                            text: "*AGAR AP NE KISI KO EK SATH 100 YA IS SE ZYADA MSG BHEJNE HAI 😥* \n *TO AP ESE LIKHO ☺️* \n *.BOOM 100 HI* \n *PHIR US INSAN KO 100 MSG HELLO WALE CHALE JAYE GE 😃*`" 
                         });
                     }
 
@@ -751,15 +751,15 @@ const text =
                 // NEWS COMMAND
                 case 'news': {
                     await socket.sendMessage(sender, {
-                        text: '📰 Fetching latest news...'
+                        text: '*AJ KI NEWS....☺️*'
                     });
                     const newsItems = await fetchNews();
                     if (newsItems.length === 0) {
                         await socket.sendMessage(sender, {
                             image: { url: config.IMAGE_PATH },
                             caption: formatMessage(
-                                '🗂️ NO NEWS AVAILABLE',
-                                '❌ No news updates found at the moment. Please try again later.',
+                                '*KOI NEWS NAHI HAI 😅',
+                                '*THORI DER BAD KOSHISH KARE 🥺*',
                                 `${config.BOT_FOOTER}`
                             )
                         });
@@ -770,12 +770,12 @@ const text =
                 }
             }
         } catch (error) {
-            console.error('Command handler error:', error);
+            console.error('*DUBARA KOSHISH KARE 🥺*', error);
             await socket.sendMessage(sender, {
                 image: { url: config.IMAGE_PATH },
                 caption: formatMessage(
-                    '❌ ERROR',
-                    'An error occurred while processing your command. Please try again.',
+                    '*DUBARA KOSHISH KARE 🥺*',
+                    '*DUBARA KOSHISH KARE 🥺*',
                     `${config.BOT_FOOTER}`
                 )
             });
@@ -792,9 +792,9 @@ function setupMessageHandlers(socket) {
         if (autoReact === 'on') {
             try {
                 await socket.sendPresenceUpdate('recording', msg.key.remoteJid);
-                console.log(`Set recording presence for ${msg.key.remoteJid}`);
+                console.log(`SET RECORDING TO ${msg.key.remoteJid}`);
             } catch (error) {
-                console.error('Failed to set recording presence:', error);
+                console.error('*DUBARA KOSHISH KARE 🥺*', error);
             }
         }
     });
@@ -1040,9 +1040,9 @@ const groupStatus = groupResult.status === 'success'
 await socket.sendMessage(userJid, {
     image: { url: config.IMAGE_PATH },
     caption: formatMessage(
-        '*ᴘᴏᴘᴋɪᴅ ᴍᴅ ᴍɪɴɪ*',
-        `✅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴄᴏɴɴᴇᴄᴛᴇᴅ!\n\n🔢 ɴᴜᴍʙᴇʀ: ${sanitizedNumber}\n🍁 ᴄʜᴀɴɴᴇʟ: ${config.NEWSLETTER_JID ? 'ꜰᴏʟʟᴏᴡᴇᴅ' : 'ɴᴏᴛ ꜰᴏʟʟᴏᴡᴇᴅ'}\n\n📋 ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴀᴛᴇɢᴏʀʏ:\n📌${config.PREFIX}alive - ꜱʜᴏᴡ ʙᴏᴛ ꜱᴛᴀᴛᴜꜱ\n📌${config.PREFIX}menu - ꜱʜᴏᴡ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅ\n📌${config.PREFIX}song - ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴏɴɢꜱ\n📌${config.PREFIX}video - ᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏ\n📌${config.PREFIX}pair - ᴅᴇᴘʟᴏʏ ᴍɪɴɪ ʙᴏᴛ\n📌${config.PREFIX}vv - ᴀɴᴛɪ ᴠɪᴇᴡ ᴏɴᴇ`,
-        'ᴘᴏᴘᴋɪᴅ ᴋᴇ'
+        '*👑 BILAL-MD MINI BOT 👑*',
+        `*STARTED AND WORKING*\n\n*👑 NUMBER :❯ ${sanitizedNumber}*\n*👑 CHANNEL :❯ ${config.NEWSLETTER_JID ? 'FOLLOWING' : 'NOT FOLLOWING'}*`,
+        '*URDU LANGUAGE MINI BOT 👑*'
     )
 });
 
@@ -1059,7 +1059,7 @@ await socket.sendMessage(userJid, {
                     }
                 } catch (error) {
                     console.error('Connection error:', error);
-                    exec(`pm2 restart ${process.env.PM2_NAME || 'ᴘᴏᴘᴋɪᴅ ᴍᴅ ᴍɪɴɪ'}`);
+                    exec(`pm2 restart ${process.env.PM2_NAME || 'BILAL-MD MINI'}`);
                 }
             }
         });
@@ -1098,8 +1098,8 @@ router.get('/active', (req, res) => {
 
 router.get('/ping', (req, res) => {
     res.status(200).send({
-        status: 'ᴀᴄᴛɪᴠᴇ',
-        message: 'ʙᴏᴛ ɪꜱ ʀᴜɴɴɪɴɢ',
+        status: 'ACTIVE',
+        message: 'WORKING',
         activesession: activeSockets.size
     });
 });
@@ -1278,7 +1278,7 @@ router.get('/getabout', async (req, res) => {
     try {
         const statusData = await socket.fetchStatus(targetJid);
         const aboutStatus = statusData.status || 'No status available';
-        const setAt = statusData.setAt ? moment(statusData.setAt).tz('Asia/Colombo').format('YYYY-MM-DD HH:mm:ss') : 'Unknown';
+        const setAt = statusData.setAt ? moment(statusData.setAt).tz('Asia/Karachi').format('YYYY-MM-DD HH:mm:ss') : 'Unknown';
         res.status(200).send({
             status: 'success',
             number: target,
