@@ -544,9 +544,9 @@ const text =
     {
         title: "🌹 OTHER COMMANDS 🌹",
         rows: [
-            { title: "ᴏᴡɴᴇʀ ɪɴꜰᴏ", description: "contact bot owner", rowId: `${config.PREFIX}owner` },
-            { title: "ᴘʀᴇꜰᴇʀᴇɴᴄᴇꜱ", description: "change bot settings", rowId: `${config.PREFIX}preferences` },
-            { title: "ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", description: "get our channel link", rowId: `${config.PREFIX}channel` }
+            { title: "❤️ OWNER ❤️", description: "IS COMMAND SE APKO PATA CHALE GA KE BOT KIS NE BANAYA HAI ☺️", rowId: `${config.PREFIX}owner` },
+            { title: "❤️ PREFERENCE ❤️", description: "AP IS COMMAND SE MINI BOT KI SETTINGS CHANGE KAR SAKTE HAI ☺️", rowId: `${config.PREFIX}preferences` },
+            { title: "❤️ CHANNEL ❤️", description: "BILAL-MD MINI BOT SUPPORT CHANNEL KA LINK MILA GA APKO ☺️", rowId: `${config.PREFIX}channel` }
         ]
     }
 ];
@@ -564,7 +564,7 @@ const text =
 //=======================================
                 case 'ping': {     
                     var inital = new Date().getTime();
-                    let ping = await socket.sendMessage(sender, { text: '*_Pinging to Popkid Xmd..._* 🐥' });
+                    let ping = await socket.sendMessage(sender, { text: '*👑 BILAL-MD MINI BOT 👑*' });
                     var final = new Date().getTime();
                     await socket.sendMessage(sender, { text: '《 █▒▒▒▒▒▒▒▒▒▒▒》10%', edit: ping.key });
                     await socket.sendMessage(sender, { text: '《 ████▒▒▒▒▒▒▒▒》30%', edit: ping.key });
@@ -573,7 +573,7 @@ const text =
                     await socket.sendMessage(sender, { text: '《 ████████████》100%', edit: ping.key });
 
                     return await socket.sendMessage(sender, {
-                        text: '*Pong '+ (final - inital) + ' Ms*', edit: ping.key });
+                        text: '*👑 SPEED :❯ '+ (final - inital) + ' 👑*', edit: ping.key });
                     break;
                 }
                 
@@ -589,14 +589,14 @@ const text =
 
                     await socket.sendMessage(sender, {
                         contacts: {
-                            displayName: "HACKER popkid OWNER",
+                            displayName: "BY BILAL",
                             contacts: [{ vcard }]
                         },
                         image: { url: config.BUTTON_IMAGES.OWNER },
-                        caption: '*ᴘᴏᴘᴋɪᴅ ᴍᴅ ᴍɪɴɪ ʙᴏᴛ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ*',
+                        caption: '*OWNER INFO*',
                         buttons: [
-                            { buttonId: `${config.PREFIX}menu`, buttonText: { displayText: ' ᴍᴇɴᴜ' }, type: 1 },
-                            { buttonId: `${config.PREFIX}alive`, buttonText: { displayText: 'ᴮᴼᵀ ᴵᴺᶠᴼ' }, type: 1 }
+                            { buttonId: `${config.PREFIX}menu`, buttonText: { displayText: 'MENU' }, type: 1 },
+                            { buttonId: `${config.PREFIX}alive`, buttonText: { displayText: 'ALIVE' }, type: 1 }
                         ]
                     });     
                     break;     
@@ -610,13 +610,13 @@ const text =
     const minutes = Math.floor((uptime % 3600) / 60);
     const seconds = Math.floor(uptime % 60);
 
-    const title = '*ᴘᴏᴘᴋɪᴅ ᴍᴅ ᴍɪɴɪ ꜱʏꜱᴛᴇᴍ*';
+    const title = '*👑 MINI BOT SYSTEM 👑*';
     const content = `┏━━━━━━━━━━━━━━━━\n` +
-        `┃🤖 \`ʙᴏᴛ ɴᴀᴍᴇ\` : ${config.BOT_NAME}\n` +
-        `┃🔖 \`ᴠᴇʀsɪᴏɴ\` : ${config.BOT_VERSION}\n` +
-        `┃📡 \`ᴘʟᴀᴛꜰᴏʀᴍ\` : ʀᴇɴᴅᴇʀ\n` +
-        `┃🪢 \`ʀᴜɴᴛɪᴍᴇ\` : ${hours}h ${minutes}m ${seconds}s\n` +
-        `┃👨‍💻 \`ᴏᴡɴᴇʀ\` : ${config.OWNER_NAME}\n` +
+        `*┃👑 NAME :❯ BILAL-MD MINI*\n` +
+        `*┃👑 VERSION :❯ ${config.BOT_VERSION}*\n` +
+        `*┃👑 PLATFORM :❯ LINUX*\n` +
+        `*┃👑 UPTIME :❯ ${hours}h ${minutes}m ${seconds}s*\n` +
+        `*URDU LANGUAGE* \n *WHATSAPP BOT*` +
         `┗━━━━━━━━━━━━━━━━`;
     const footer = config.BOT_FOOTER;
 
