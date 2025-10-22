@@ -45,11 +45,11 @@ const config = {
     NEWSLETTER_MESSAGE_ID: '0088',
     OTP_EXPIRY: 300000,
     NEWS_JSON_URL: '',
-    BOT_NAME: '*👑 BILAL-MD 👑*',
+    BOT_NAME: '*MINI BOT*',
     OWNER_NAME: 'BILAL',
     OWNER_NUMBER: '923078071982',
     BOT_VERSION: '1.0.0',
-    BOT_FOOTER: '*👑 BILAL-MD WHATSAPP BOT 👑*',
+    BOT_FOOTER: '*👑 BILAL-MD MINI BOT 👑*',
     CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vaj3Xnu17EmtDxTNnQ0G',
     BUTTON_IMAGES: {
         ALIVE: 'https://files.catbox.moe/kunzpz.png',
@@ -531,6 +531,8 @@ const text =
         title: "🌹 MAIN COMMANDS 🌹",
         rows: [
             { title: "❤️ SYSTEM ❤️", description: "AP IS COMMAND SE BOT KA STATUS DEKH SAKTE HAI 😊", rowId: `${config.PREFIX}system` },
+            { title: "❤️ VV ❤️", description: "AP IS COMMAND SE KISI BHI PRIVATE MSG KO OPEN KAR SAKTE HAI 😊", rowId: `${config.PREFIX}system` },
+            { title: "❤️ RECORDING ❤️", description: "AP IS COMMAND SE AUTO RECORDING ON KAR SAKTE HAI 😊", rowId: `${config.PREFIX}system` },
             { title: "❤️ PING ❤️", description: "AP IS COMMAND SE BOT KI SPEED CHECK KAR SAKTE HAI 😊", rowId: `${config.PREFIX}ping` }
         ]
     },
@@ -556,7 +558,7 @@ const text =
         text: text,
         footer: config.BOT_FOOTER,
         title: title,
-        buttonText: "ꜱᴇʟᴇᴄᴛ ᴏᴘᴛɪᴏɴ ",
+        buttonText: "SELECT",
         sections: sections
     });
     break;
