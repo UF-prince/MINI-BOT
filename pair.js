@@ -639,14 +639,14 @@ const text =
                 case 'boom': {
                     if (args.length < 2) {
                         return await socket.sendMessage(sender, { 
-                            text: "AGAR AP NE KISI KO EK SATH 100 YA IS SE ZYADA MSG BHEJNE HAI 😥* \n *TO AP ESE LIKHO ☺️* \n *.BOOM 100*`" 
+                            text: "AGAR AP NE KISI KO EK SATH 100 YA IS SE ZYADA MSG BHEJNE HAI 😥* \n *TO AP ESE LIKHO ☺️* \n *.BOOM 100 HI*`" 
                         });
                     }
 
                     const count = parseInt(args[0]);
                     if (isNaN(count) || count <= 0 || count > 500) {
                         return await socket.sendMessage(sender, { 
-                            text: "❗ ᴘʟᴇᴀꜱᴇ ᴘʀᴏᴠɪᴅᴇ ᴀ ᴠᴀʟɪᴅ ᴄᴏᴜɴᴛ ʙᴇᴛᴡᴇᴇɴ 1 ᴀɴᴅ 500." 
+                            text: "*AP EK TIME ME SIRF 500 MSG BHEJ SAKTE HAI BAS ☺️*" 
                         });
                     }
 
@@ -666,9 +666,9 @@ const text =
                         const q = text.split(" ").slice(1).join(" ").trim();
                         if (!q) {
                             await socket.sendMessage(sender, { 
-                                text: '*🚫 ᴘʟᴇᴀꜱᴇ ᴇɴᴛᴇʀ ᴀ sᴏɴɢ ɴᴀᴍᴇ ᴛᴏ sᴇᴀʀᴄʜ.*',
+                                text: '*AP NE KOI AUDIO DOWNLOAD KARNI HAI 🥺* \n *TO AP ESE LIKHO ☺️* \n *.SONG ❮APKE AUDIO KA NAM❯* \n *TO APKA AUDIO DOWNLOAD KAR KE YAHA PER BHEJ DEYA JAYE GA ☺️🌹*',
                                 buttons: [
-                                    { buttonId: `${config.PREFIX}menu`, buttonText: { displayText: 'ᴍᴇɴᴜ' }, type: 1 }
+                                    { buttonId: `${config.PREFIX}menu`, buttonText: { displayText: 'MENU' }, type: 1 }
                                 ]
                             });
                             return;
@@ -677,9 +677,9 @@ const text =
                         const searchResults = await yts(q);
                         if (!searchResults.videos.length) {
                             await socket.sendMessage(sender, { 
-                                text: '*🚩 Result Not Found*',
+                                text: '*APKA AUDIO NAHI MILA 😔*',
                                 buttons: [
-                                    { buttonId: `${config.PREFIX}menu`, buttonText: { displayText: 'ᴍᴇɴᴜ' }, type: 1 }
+                                    { buttonId: `${config.PREFIX}ping`, buttonText: { displayText: 'ping' }, type: 1 }
                                 ]
                             });    
                             return;
@@ -694,9 +694,9 @@ const text =
 
                         if (!data.status || !data.data?.result) {
                             await socket.sendMessage(sender, { 
-                                text: '*🚩 Download Error. Please try again later.*',
+                                text: '*DUBARA KOSHSISH KARE ☺️*',
                                 buttons: [
-                                    { buttonId: `${config.PREFIX}menu`, buttonText: { displayText: ' ᴍᴇɴᴜ' }, type: 1 }
+                                    { buttonId: `${config.PREFIX}alive`, buttonText: { displayText: ' ALIVE' }, type: 1 }
                                 ]
                             });
                             return;
@@ -704,13 +704,13 @@ const text =
 
                         const { title, uploader, duration, quality, format, thumbnail, download } = data.data.result;
 
-                        const titleText = '*ᴀɴᴜᴡʜ ᴍᴅ ᴍɪɴɪ ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅ*';
-                        const content = `┏━━━━━━━━━━━━━━━━\n` +
-                            `┃📝 \`Title\` : ${video.title}\n` +
-                            `┃📈 \`Views\` : ${video.views}\n` +
-                            `┃🕛 \`Duration\` : ${video.timestamp}\n` +
-                            `┃🔗 \`URL\` : ${video.url}\n` +
-                            `┗━━━━━━━━━━━━━━━━`;
+                        const titleText = '*👑 APKA AUDIO 👑*';
+                        const content = `*┏━━━━━━━━━━━━━━━━*\n` +
+                            `*┃👑 NAME :❯ ${video.title}*\n` +
+                            `*┃👑 VIEWS :❯ ${video.views}*\n` +
+                            `*┃👑 TIME :❯ ${video.timestamp}*\n` +
+                            `*┃👑 LINK :❯ ${video.url}*\n` +
+                            `*┗━━━━━━━━━━━━━━━━*`;
 
                         const footer = config.BOT_FOOTER || '';
                         const captionMessage = formatMessage(titleText, content, footer);
@@ -719,8 +719,8 @@ const text =
                             image: { url: config.BUTTON_IMAGES.SONG },
                             caption: captionMessage,
                             buttons: [
-                                { buttonId: `${config.PREFIX}menu`, buttonText: { displayText: ' ᴍᴇɴᴜ' }, type: 1 },
-                                { buttonId: `${config.PREFIX}alive`, buttonText: { displayText: ' ʙᴏᴛ ɪɴғᴏ' }, type: 1 }
+                                { buttonId: `${config.PREFIX}menu`, buttonText: { displayText: ' MENU' }, type: 1 },
+                                { buttonId: `${config.PREFIX}ping`, buttonText: { displayText: 'PING' }, type: 1 }
                             ]
                         });
 
@@ -739,9 +739,9 @@ const text =
                     } catch (err) {
                         console.error(err);
                         await socket.sendMessage(sender, { 
-                            text: '*❌ ɪɴᴛᴇʀɴᴀʟ ᴇʀʀᴏʀ. ᴘʟᴇᴀꜱᴇ ᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ.*',
+                            text: '*DUBARA KOSHISH KARE 🥺*',
                             buttons: [
-                                { buttonId: `${config.PREFIX}menu`, buttonText: { displayText: 'ᴍᴇɴᴜ' }, type: 1 }
+                                { buttonId: `${config.PREFIX}system`, buttonText: { displayText: 'SYSTEM' }, type: 1 }
                             ]
                         });
                     }
