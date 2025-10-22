@@ -1,2 +1,1 @@
-# JEPHTER-MINI-X
-✧〖THE  BEST WHATSAPP BOT CREATED BY JEPHTER ♥️〗✧
+[DEPLOY](https://heroku.com/deploy?template=https://github.com/UF-prince/MINI-BOT)
