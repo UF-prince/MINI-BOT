@@ -1,20 +1,107 @@
 {
-  "name": "WhatsApp Bot",
-  "description": "Node.js WhatsApp bot using whatsapp-web.js",
-  "keywords": ["nodejs", "whatsapp", "bot"],
-  "repository": "https://github.com/your-username/your-whatsapp-bot",
-  "logo": "https://small-sharp-tool.com/logo.svg",
-  "buildpacks": [
-    {
-      "url": "heroku/nodejs"
+  "name": "anuwh-md-mini",
+  "description": "WhatsApp bot with auto view, auto like, and more features",
+  "repository": "https://github.com/BilalTech05/BILAL-MD-MINI-BOT",
+  "logo": "https://files.catbox.moe/kunzpz.png",
+  "keywords": ["whatsapp", "bot", "automation", "mini-bot"],
+  "scripts": {
+    "start": "node index.js"
+  },
+  "env": {
+    "AUTO_VIEW_STATUS": {
+      "description": "Enable or disable auto view",
+      "required": true,
+      "value": "true"
     },
-    {
-      "url": "https://github.com/jontewks/puppeteer-heroku-buildpack"
-    }
-  ],
-  "formation": {
-    "web": {
-      "quantity": 1
+    "AUTO_LIKE_STATUS": {
+      "description": "Enable or disable auto like",
+      "required": true,
+      "value": "false"
+    },
+    "AUTO_RECORDING": {
+      "description": "Enable or disable auto recording status",
+      "required": true,
+      "value": "true"
+    },
+    "AUTO_LIKE_EMOJI": {
+      "description": "Emojis to use for auto like",
+      "required": true,
+      "value": "❤️,😇,💕,💞,🌹,😊"
+    },
+    "PREFIX": {
+      "description": "Command prefix for the bot",
+      "required": true,
+      "value": "."
+    },
+    "MAX_RETRIES": {
+      "description": "Maximum retry attempts",
+      "required": true,
+      "value": "3"
+    },
+    "GROUP_INVITE_LINK": {
+      "description": "WhatsApp group invite link",
+      "required": true,
+      "value": "https://chat.whatsapp.com/FHDEPkBBf281sUcdj17eU9?mode=wwt"
+    },
+    "ADMIN_LIST_PATH": {
+      "description": "Path to admin list JSON",
+      "required": true,
+      "value": "./admin.json"
+    },
+    "IMAGE_PATH": {
+      "description": "Bot image URL",
+      "required": true,
+      "value": "https://i.postimg.cc/fbLksDqz/Screenshot-20251005-224142-Whats-App-Business.jpg"
+    },
+    "NEWSLETTER_JID": {
+      "description": "Newsletter JID",
+      "required": false,
+      "value": "120363419140572186@newsletter"
+    },
+    "NEWSLETTER_MESSAGE_ID": {
+      "description": "Newsletter message ID",
+      "required": false,
+      "value": "5775"
+    },
+    "OTP_EXPIRY": {
+      "description": "OTP expiry time in milliseconds",
+      "required": true,
+      "value": "300000"
+    },
+    "NEWS_JSON_URL": {
+      "description": "URL for news JSON feed",
+      "required": false,
+      "value": ""
+    },
+    "BOT_NAME": {
+      "description": "Name of the bot",
+      "required": true,
+      "value": "ᴀɴᴜᴡʜ ᴍᴅ ᴍɪɴɪ"
+    },
+    "OWNER_NAME": {
+      "description": "Owner's name",
+      "required": true,
+      "value": "popkid ke"
+    },
+    "OWNER_NUMBER": {
+      "description": "Owner's WhatsApp number",
+      "required": true,
+      "value": "254732297194"
+    },
+    "BOT_VERSION": {
+      "description": "Bot version",
+      "required": true,
+      "value": "2.0.0 ʙᴇᴛᴀ"
+    },
+    "BOT_FOOTER": {
+      "description": "Bot footer text",
+      "required": true,
+      "value": "> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ popkid"
+    },
+    "CHANNEL_LINK": {
+      "description": "WhatsApp channel link",
+      "required": false,
+      "value": "https://whatsapp.com/channel/0029VbBTlzoLtOjGXhhD4I2d"
     }
   }
 }
