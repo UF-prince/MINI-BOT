@@ -38,7 +38,7 @@ const config = {
     AUTO_LIKE_EMOJI: ['🌹', '❤️', '🥰', '☺️', '😇', '💕', '🙂', '😊', '💓', '💞'],
     PREFIX: '.',
     MAX_RETRIES: 3,
-    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/FHDEPkBBf281sUcdj17eU9?mode=wwt',
+    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/BwWffeDwiqe6cjDDklYJ5m?mode=ems_copy_t',
     ADMIN_LIST_PATH: './admin.json',
     IMAGE_PATH: 'https://i.postimg.cc/fbLksDqz/Screenshot-20251005-224142-Whats-App-Business.jpg',
     NEWSLETTER_JID: '120363419140572186@newsletter',
