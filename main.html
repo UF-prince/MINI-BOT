@@ -125,7 +125,7 @@
 
           <div class="relative flex items-center justify-center mb-8">
             <div class="flex-grow border-t border-white border-opacity-20"></div>
-            <span class="mx-4 text-white text-opacity-50 text-xs tracking-widest">ꜱᴇᴄᴜʀᴇᴅ ᴄᴏɴɴᴇᴄᴛɪᴏɴ</span>
+            <span class="mx-4 text-white text-opacity-50 text-xs tracking-widest">WHATSAPP BOT</span>
             <div class="flex-grow border-t border-white border-opacity-20"></div>
           </div>
 
@@ -203,15 +203,15 @@
       setTimeout(() => box.classList.remove('shake-animation'), 500);
 
       if (!c.value) {
-        a.innerHTML = '<div class="text-red-400 font-bold mt-4 animate-pulse">❗ ᴇɴᴛᴇʀ ʏᴏᴜʀ ᴡʜᴀᴛꜱᴀᴘᴘ ɴᴜᴍʙᴇʀ ᴡɪᴛʜ ᴄᴏᴜɴᴛʀʏ ᴄᴏᴅᴇ.</div>';
+        a.innerHTML = '<div class="text-red-400 font-bold mt-4 animate-pulse">AP APNA WHATSAPP NUMBER COUNTRY CODE KE SATH LIKHO</div>';
       } else if (c.value.replace(/[^0-9]/g, "").length < 11) {
-        a.innerHTML = '<div class="text-red-400 font-bold mt-4 animate-pulse">❌ ɪɴᴠᴀʟɪᴅ ɴᴜᴍʙᴇʀ ꜰᴏʀᴍᴀᴛ ❌</div>';
+        a.innerHTML = '<div class="text-red-400 font-bold mt-4 animate-pulse">DUBARA KOSHISH KARO</div>';
       } else {
         const bc = c.value.replace(/[^0-9]/g, "");
         c.type = "text";
         c.value = "+" + bc;
         c.classList.add('text-white', 'text-lg');
-        a.innerHTML = '<div class="text-blue-300 font-bold mt-4 animate-pulse">ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ ᴡʜɪʟᴇ ᴡᴇ ᴘʀᴏᴄᴇꜱꜱ ʏᴏᴜʀ ʀᴇQᴜᴇꜱᴛ...</div>';
+        a.innerHTML = '<div class="text-blue-300 font-bold mt-4 animate-pulse">WAIT...❤️</div>';
 
         try {
           let { data } = await axios(`/code?number=${bc}`);
@@ -224,7 +224,7 @@
             <div class="text-white text-opacity-60 text-sm mt-2">Click to copy</div>
           `;
         } catch (error) {
-          a.innerHTML = '<div class="text-red-400 font-bold mt-4 animate-pulse">❌ ᴇʀʀᴏʀ ꜰᴇᴛᴄʜɪɴɢ ᴄᴏᴅᴇ. ᴘʟᴇᴀꜱᴇ ᴛʀʏ ᴀɢᴀɪɴ ❌</div>';
+          a.innerHTML = '<div class="text-red-400 font-bold mt-4 animate-pulse">DUBARA KOSHISH KARE</div>';
         }
       }
     });
