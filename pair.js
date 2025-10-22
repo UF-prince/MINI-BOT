@@ -621,7 +621,7 @@ const text =
     const footer = config.BOT_FOOTER;
 
     await socket.sendMessage(sender, {
-        image: { url: "https://i.postimg.cc/fbLksDqz/Screenshot-20251005-224142-Whats-App-Business.jpg" },
+        image: { url: "https://files.catbox.moe/kunzpz.png" },
         caption: formatMessage(title, content, footer)
     });
     break;
@@ -630,7 +630,7 @@ const text =
                 // JID COMMAND
                 case 'jid': {
                     await socket.sendMessage(sender, {
-                        text: `*🆔 ᴄʜᴀᴛ ᴊɪᴅ:* ${sender}`
+                        text: `*CHAT WITH* ${sender}`
                     });
                     break;
                 }
@@ -639,7 +639,7 @@ const text =
                 case 'boom': {
                     if (args.length < 2) {
                         return await socket.sendMessage(sender, { 
-                            text: "📛 *ᴜꜱᴀɢᴇ:* `.ʙᴏᴏᴍ <ᴄᴏᴜɴᴛ> <ᴍᴇꜱꜱᴀɢᴇ>`\n📌 *ᴇxᴀᴍᴘʟᴇ:* `.ʙᴏᴏᴍ 100 ʜᴇʟʟᴏ`" 
+                            text: "AGAR AP NE KISI KO EK SATH 100 YA IS SE ZYADA MSG BHEJNE HAI 😥* \n *TO AP ESE LIKHO ☺️* \n *.BOOM 100*`" 
                         });
                     }
 
