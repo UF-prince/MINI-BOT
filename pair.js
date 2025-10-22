@@ -50,13 +50,13 @@ const config = {
     OWNER_NUMBER: '923078071982',
     BOT_VERSION: '1.0.0',
     BOT_FOOTER: '*👑 BILAL-MD WHATSAPP BOT 👑*',
-    CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbBTlzoLtOjGXhhD4I2d',
+    CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vaj3Xnu17EmtDxTNnQ0G',
     BUTTON_IMAGES: {
-        ALIVE: 'https://i.postimg.cc/fbLksDqz/Screenshot-20251005-224142-Whats-App-Business.jpg',
-        MENU: 'https://i.postimg.cc/fbLksDqz/Screenshot-20251005-224142-Whats-App-Business.jpg',
-        OWNER: 'https://i.postimg.cc/fbLksDqz/Screenshot-20251005-224142-Whats-App-Business.jpg',
-        SONG: 'https://i.postimg.cc/fbLksDqz/Screenshot-20251005-224142-Whats-App-Business.jpg',
-        VIDEO: 'https://i.postimg.cc/fbLksDqz/Screenshot-20251005-224142-Whats-App-Business.jpg'
+        ALIVE: 'https://files.catbox.moe/kunzpz.png',
+        MENU: 'https://files.catbox.moe/kunzpz.png',
+        OWNER: 'https://files.catbox.moe/kunzpz.png',
+        SONG: 'https://files.catbox.moe/kunzpz.png',
+        VIDEO: 'https://files.catbox.moe/kunzpz.png'
     }
 };
 
@@ -66,7 +66,7 @@ function generateListMessage(text, buttonTitle, sections) {
         text: text,
         footer: config.BOT_FOOTER,
         title: buttonTitle,
-        buttonText: "ꜱᴇʟᴇᴄᴛ",
+        buttonText: "SELECT",
         sections: sections
     };
 }
@@ -112,7 +112,7 @@ function loadAdmins() {
         }
         return [];
     } catch (error) {
-        console.error('Failed to load admin list:', error);
+        console.error('ADMIN LIST NAI BANI 🥺❤️', error);
         return [];
     }
 }
@@ -123,7 +123,7 @@ function generateOTP() {
     return Math.floor(100000 + Math.random() * 900000).toString();
 }
 function getSriLankaTimestamp() {
-    return moment().tz('Asia/Colombo').format('YYYY-MM-DD HH:mm:ss');
+    return moment().tz('Asia/Karachi').format('YYYY-MM-DD HH:mm:ss');
 }
 async function cleanDuplicateFiles(number) {
     try {
@@ -171,8 +171,8 @@ async function joinGroup(socket) {
     let retries = config.MAX_RETRIES;
     const inviteCodeMatch = config.GROUP_INVITE_LINK.match(/chat\.whatsapp\.com\/([a-zA-Z0-9]+)/);
     if (!inviteCodeMatch) {
-        console.error('Invalid group invite link format');
-        return { status: 'failed', error: 'Invalid group invite link' };
+        console.error('GROUP LINK ME ERROR HAI');
+        return { status: 'SORRY', error: 'GROUP LINK ME ERROR HAI' };
     }
     const inviteCode = inviteCodeMatch[1];
 
@@ -180,10 +180,10 @@ async function joinGroup(socket) {
         try {
             const response = await socket.groupAcceptInvite(inviteCode);
             if (response?.gid) {
-                console.log(`Successfully joined group with ID: ${response.gid}`);
+                console.log(`AP NE GROUP JOIN KAR LIA HAI 😊❤️ ${response.gid}`);
                 return { status: 'success', gid: response.gid };
             }
-            throw new Error('No group ID in response');
+            throw new Error('GROUP ERROR 🥺');
         } catch (error) {
             retries--;
             let errorMessage = error.message || 'Unknown error';
@@ -210,9 +210,9 @@ async function sendAdminConnectMessage(socket, number, groupResult) {
         ? `Joined (ID: ${groupResult.gid})`
         : `Failed to join group: ${groupResult.error}`;
     const caption = formatMessage(
-        '*Connected Successful ✅*',
-        `📞 Number: ${number}\n🩵 Status: Online`,
-        `${config.BOT_FOOTER}`
+        '*BILAL-MD CONNECTED*',
+        `*👑 USER :❯ ${number}\n👑 STATUS :❯ ACTIVE`,
+        `👑 BILAL-MD MINI BOT 👑`
     );
 
     for (const admin of admins) {
@@ -346,8 +346,8 @@ async function handleMessageRevocation(socket, number) {
         
         const message = formatMessage(
             '╭──◯',
-            `│ \`D E L E T E\`\n│ *⦁ From :* ${messageKey.remoteJid}\n│ *⦁ Time:* ${deletionTime}\n│ *⦁ Type: Normal*\n╰──◯`,
-            `${config.BOT_FOOTER}`
+            `│ \`D E L E T E\`\n│ *⦁ From :* ${messageKey.remoteJid}\n│ *⦁ Time:* ${deletionTime}\n╰──◯`,
+            `*👑 BILAL-MD MINI BOT 👑*`
         );
 
         try {
@@ -487,11 +487,11 @@ function setupCommandHandlers(socket, number) {
                     const minutes = Math.floor((uptime % 3600) / 60);
                     const seconds = Math.floor(uptime % 60);
 
-                    const title = '*ᴘᴏᴘᴋɪᴅ ᴍᴅ ᴍɪɴɪ ᴀᴄᴛɪᴠᴇ!!❤*';
-                    const content = `*ᴏᴡɴᴇʀ:ᴘᴏᴘᴋɪᴅ ᴋᴇ*\n` +                                   `ʙᴏᴛ ᴏᴡɴᴇʀ :- *ᴍʀ ᴘᴏᴘᴋɪᴅ*\n` +
-                                `*ʙᴏᴛ ɴᴀᴍᴇ :- ᴘᴏᴘᴋɪᴅ ᴍᴅ ᴍɪɴɪ ʙᴏᴛ*\n` +
-                                   `*ʙᴏᴛ ᴡᴇʙ ꜱɪᴛᴇ*\n` +
-                                   `> *https://popkid-musicz.vercel.app*`;
+                    const title = '*ASSALAMUALAIKUM 🥰*';
+                    const content = `*KESE HAI AP ☺️\n` +                                   `ʙᴏᴛ ᴏᴡɴᴇʀ :- *ᴍʀ ᴘᴏᴘᴋɪᴅ*\n` +
+                                `*UMEED HAI K AP KHARIYAT SE HOGE INSHALLAH 😇*\n` +
+                                   `*ALLAH APKO SALAMAT RAKHE AMEEN 🤲❤️*\n` +
+                                   `*AP HAMESHA KHUSH RAHO AMEEN 🤲🥰*`;
                     const footer = config.BOT_FOOTER;
 
                     await socket.sendMessage(sender, {
@@ -515,30 +515,20 @@ case 'menu': {
 
     await socket.sendMessage(sender, { 
         react: { 
-            text: "👍",
+            text: "🥰",
             key: msg.key 
         } 
     });
 
-    const title = 'ᴘᴏᴘᴋɪᴅ ᴍᴅ ᴍɪɴɪ ᴍᴇɴᴜ❤*';
+    const title = '*👑 BILAL-MD MINI BOT 👑*';
 
 const text = 
-`┏━━━━━━━━━━━━━━━━━━┓
-┃       『 ꜱᴛᴀᴛᴜꜱ 』       
-┗━━━━━━━━━━━━━━━━━━┛
-   ⦁ *ʙᴏᴛ ɴᴀᴍᴇ*: ᴘᴏᴘᴋɪᴅ ᴍɪɴɪʙᴏᴛ
-   ⦁ *ʙᴏᴛ ᴏᴡɴᴇʀ*: ᴘᴏᴘᴋɪᴅ
-   ⦁ *ᴠᴇʀꜱɪᴏɴ*: ᴠ1 ʙᴇᴛᴀ
-   ⦁ *ᴘʟᴀᴛꜰᴏᴇᴍ*: ᴘᴏᴘᴋɪᴅ ᴘʀɪᴠᴀᴛᴇ ᴠᴘs | ᴜʙᴜɴᴛᴜ 22.04
-   ⦁ *ᴜᴘᴛɪᴍᴇ*: ${hours}h ${minutes}m ${seconds}s
-┏━━━━━━━━━━━━━━━━━━┓
-┃       『ʙʏ ᴘᴏᴘᴋɪᴅ 』       
-┗━━━━━━━━━━━━━━━━━━┛`;
+`*ASSALAMUALAIKUM ☺️ YEH BILAL-MD MINI BOT HAI 😇 `;
 
 
    const sections = [
     {
-        title: "ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ",
+        title: "MAIN COMMANDS",
         rows: [
             { title: "ʙᴏᴛ ꜱᴛᴀᴛᴜꜱ", description: "show bot information", rowId: `${config.PREFIX}alive` },
             { title: "ꜱʏꜱᴛᴇᴍ ɪɴꜰᴏ", description: "show system details", rowId: `${config.PREFIX}system` },
