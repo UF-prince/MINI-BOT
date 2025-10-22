@@ -129,22 +129,22 @@
             <div class="flex-grow border-t border-white border-opacity-20"></div>
           </div>
 
-          <!-- 📱 Input Box -->
-          <div class="input-container flex bg-white bg-opacity-10 rounded-xl p-1 gap-1 mb-6 border border-white border-opacity-20 focus-within:ring-2 focus-within:ring-purple-500 transition-all duration-300">
-            <input
-              class="flex-1 px-4 py-3 bg-transparent border-none rounded-lg text-white placeholder-white placeholder-opacity-40 font-light focus:outline-none focus:bg-white focus:bg-opacity-10"
-              placeholder="+923078071982"
-              type="number"
-              id="number"
-            >
-            <button
-              id="submit"
-              class="px-6 py-3 bg-gradient-to-r from-fuchsia-500 via-purple-600 to-blue-500 rounded-lg text-white font-bold uppercase tracking-wider cursor-pointer hover:from-blue-500 hover:to-fuchsia-600 neon-button"
-            >
-              DONE
-            </button>
-          </div>
-
+<!-- 📱 Input Box -->
+<div class="input-container flex flex-col bg-white bg-opacity-10 rounded-xl p-1 gap-2 mb-6 border border-white border-opacity-20 focus-within:ring-2 focus-within:ring-purple-500 transition-all duration-300">
+  <input
+    class="px-4 py-3 bg-transparent border-none rounded-lg text-white placeholder-white placeholder-opacity-40 font-light focus:outline-none focus:bg-white focus:bg-opacity-10"
+    placeholder="+923078071982"
+    type="number"
+    id="number"
+  >
+  <button
+    id="submit"
+    class="px-6 py-3 bg-gradient-to-r from-fuchsia-500 via-purple-600 to-blue-500 rounded-lg text-white font-bold uppercase tracking-wider cursor-pointer hover:from-blue-500 hover:to-fuchsia-600 neon-button"
+  >
+    DONE
+  </button>
+</div>
+          
           <div id="waiting-message" class="text-center gradient-text text-xl hidden">
             WAIT...😊
           </div>
