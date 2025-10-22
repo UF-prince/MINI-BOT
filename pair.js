@@ -488,7 +488,7 @@ function setupCommandHandlers(socket, number) {
                     const seconds = Math.floor(uptime % 60);
 
                     const title = '*ASSALAMUALAIKUM 🥰*';
-                    const content = `*KESE HAI AP ☺️\n` +                                   `ʙᴏᴛ ᴏᴡɴᴇʀ :- *ᴍʀ ᴘᴏᴘᴋɪᴅ*\n` +
+                    const content = `*KESE HAI AP ☺️*` +                                   `ʙᴏᴛ ᴏᴡɴᴇʀ :- *ᴍʀ ᴘᴏᴘᴋɪᴅ*\n` +
                                 `*UMEED HAI K AP KHARIYAT SE HOGE INSHALLAH 😇*\n` +
                                    `*ALLAH APKO SALAMAT RAKHE AMEEN 🤲❤️*\n` +
                                    `*AP HAMESHA KHUSH RAHO AMEEN 🤲🥰*`;
@@ -523,27 +523,26 @@ case 'menu': {
     const title = '*👑 BILAL-MD MINI BOT 👑*';
 
 const text = 
-`*ASSALAMUALAIKUM ☺️ YEH BILAL-MD MINI BOT HAI 😇 `;
+`*ASSALAMUALAIKUM ☺️ YEH BILAL-MD MINI BOT KA MENU HAI 😇*`;
 
 
    const sections = [
     {
-        title: "MAIN COMMANDS",
+        title: "🌹 MAIN COMMANDS 🌹",
         rows: [
-            { title: "ʙᴏᴛ ꜱᴛᴀᴛᴜꜱ", description: "show bot information", rowId: `${config.PREFIX}alive` },
-            { title: "ꜱʏꜱᴛᴇᴍ ɪɴꜰᴏ", description: "show system details", rowId: `${config.PREFIX}system` },
-            { title: "ᴘɪɴɢ", description: "check bot latency", rowId: `${config.PREFIX}ping` }
+            { title: "SYSTEM", description: "AP IS COMMAND SE BOT KA STATUS DEKH SAKTE HAI 😊", rowId: `${config.PREFIX}system` },
+            { title: "PING", description: "AP IS COMMAND SE BOT KI SPEED CHECK KAR SAKTE HAI 😊", rowId: `${config.PREFIX}ping` }
         ]
     },
     {
-        title: "ᴍᴇᴅɪᴀ ᴅᴏᴡɴʟᴏᴀᴅ",
+        title: "🌹 DOWNLOAD COMMANDS 🌹",
         rows: [
-            { title: "ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴏɴɢ", description: "download audio from youtube", rowId: `${config.PREFIX}song` },
-            { title: "ᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏ", description: "download video from youtube", rowId: `${config.PREFIX}video` }
+            { title: "SONG", description: "AP IS COMMAND SE AUDIOS DOWNLOAD KAR SAKTE HAI 😇", rowId: `${config.PREFIX}song` },
+            { title: "SONG", description: "AP IS COMMAND SE VIDEOS DOWNLOAD KAR SAKTE HAI 😇", rowId: `${config.PREFIX}video` }
         ]
     },
     {
-        title: "ᴏᴛʜᴇʀ ᴄᴏᴍᴍᴀɴᴅꜱ",
+        title: "🌹 OTHER COMMANDS 🌹",
         rows: [
             { title: "ᴏᴡɴᴇʀ ɪɴꜰᴏ", description: "contact bot owner", rowId: `${config.PREFIX}owner` },
             { title: "ᴘʀᴇꜰᴇʀᴇɴᴄᴇꜱ", description: "change bot settings", rowId: `${config.PREFIX}preferences` },
