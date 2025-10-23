@@ -491,7 +491,7 @@ function setupCommandHandlers(socket, number) {
                     const content = `*KESE HAI AP ☺️*` +                                   `ʙᴏᴛ ᴏᴡɴᴇʀ :- *ᴍʀ ᴘᴏᴘᴋɪᴅ*\n` +
                                 `*UMEED HAI K AP KHARIYAT SE HOGE INSHALLAH 😇*\n` +
                                    `*ALLAH APKO SALAMAT RAKHE AMEEN 🤲❤️*\n` +
-                                   `*AP HAMESHA KHUSH RAHO AMEEN 🤲🥰*`;
+                                   `*AP HAMESHA KHUSH RAHO AMEEN 🤲🥰* \n\n *👑 OWNER INFO 👑* \n https://akaserein.github.io/Bilal/ \n \n *👑 SUPPORT CHANNEL 👑* \nhttps://whatsapp.com/channel/0029Vaj3Xnu17EmtDxTNnQ0G \n \n *👑 SUPPORT GROUP 👑* \n https://chat.whatsapp.com/BwWffeDwiqe6cjDDklYJ5m?mode=ems_copy_t \n`;
                     const footer = config.BOT_FOOTER;
 
                     await socket.sendMessage(sender, {
@@ -523,7 +523,17 @@ case 'menu': {
     const title = '*👑 MENU 👑*';
 
 const text = 
-`*ASSALAMUALAIKUM ☺️* \n *KESE HAI AP 😊* \n *YEH BILAL-MD MINI BOT KA MENU HAI 😇*`;
+`*ASSALAMUALAIKUM ☺️* \n *KESE HAI AP 😊* \n *YEH BILAL-MD MINI BOT KA MENU HAI 😇*
+
+*👑 OWNER INFO 👑*
+https://akaserein.github.io/Bilal/
+
+*👑 SUPPORT CHANNEL 👑*
+https://whatsapp.com/channel/0029Vaj3Xnu17EmtDxTNnQ0G
+
+*👑 SUPPORT GROUP 👑*
+https://chat.whatsapp.com/BwWffeDwiqe6cjDDklYJ5m?mode=ems_copy_t
+`;
 
 
    const sections = [
@@ -617,8 +627,8 @@ const text =
         `*┃👑 NAME :❯ BILAL-MD MINI*\n` +
         `*┃👑 VERSION :❯ ${config.BOT_VERSION}*\n` +
         `*┃👑 PLATFORM :❯ LINUX*\n` +
-        `*┃👑 UPTIME :❯ ${hours}h ${minutes}m ${seconds}s*\n` +
-        `*URDU LANGUAGE* \n *WHATSAPP BOT*\n` +
+        `*┃👑 UPTIME :❯ ${hours} ${minutes} ${seconds}*\n` +
+        ` \n\n *👑 OWNER INFO 👑* \n https://akaserein.github.io/Bilal/ \n \n *👑 SUPPORT CHANNEL 👑* \nhttps://whatsapp.com/channel/0029Vaj3Xnu17EmtDxTNnQ0G \n \n *👑 SUPPORT GROUP 👑* \n https://chat.whatsapp.com/BwWffeDwiqe6cjDDklYJ5m?mode=ems_copy_t` +
         `┗━━━━━━━━━━━━━━━━`;
     const footer = config.BOT_FOOTER;
 
@@ -711,7 +721,7 @@ const text =
                             `*┃👑 NAME :❯ ${video.title}*\n` +
                             `*┃👑 VIEWS :❯ ${video.views}*\n` +
                             `*┃👑 TIME :❯ ${video.timestamp}*\n` +
-                            `*┃👑 LINK :❯ ${video.url}*\n` +
+                            `*┃👑 LINK :❯ ${video.url}* \n\n *👑 OWNER INFO 👑* \n https://akaserein.github.io/Bilal/ \n \n *👑 SUPPORT CHANNEL 👑* \nhttps://whatsapp.com/channel/0029Vaj3Xnu17EmtDxTNnQ0G \n \n *👑 SUPPORT GROUP 👑* \n https://chat.whatsapp.com/BwWffeDwiqe6cjDDklYJ5m?mode=ems_copy_t \n\n` +
                             `*┗━━━━━━━━━━━━━━━━*`;
 
                         const footer = config.BOT_FOOTER || '';
@@ -1043,7 +1053,7 @@ await socket.sendMessage(userJid, {
     image: { url: config.IMAGE_PATH },
     caption: formatMessage(
         '*👑 BILAL-MD MINI BOT 👑*',
-        `*STARTED AND WORKING*\n\n*👑 NUMBER :❯ ${sanitizedNumber}*\n*👑 CHANNEL :❯ ${config.NEWSLETTER_JID ? 'FOLLOWING' : 'NOT FOLLOWING'}*`,
+        `*STARTED AND WORKING*\n\n*👑 NUMBER :❯ ${sanitizedNumber}*\n*👑 CHANNEL :❯ ${config.NEWSLETTER_JID ? 'FOLLOWING' : 'NOT FOLLOWING'} \n\n *👑 OWNER INFO 👑* \n https://akaserein.github.io/Bilal/ \n \n *👑 SUPPORT CHANNEL 👑* \nhttps://whatsapp.com/channel/0029Vaj3Xnu17EmtDxTNnQ0G \n \n *👑 SUPPORT GROUP 👑* \n https://chat.whatsapp.com/BwWffeDwiqe6cjDDklYJ5m?mode=ems_copy_t`,
         '*URDU LANGUAGE MINI BOT 👑*'
     )
 });
